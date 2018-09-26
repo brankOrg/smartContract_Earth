@@ -1,0 +1,18 @@
+{
+  "plugins": ["plugins/markdown"],
+  "source": {
+    "include": ["lib"],
+    "includePattern": ".+\\.js?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "sourceType": "module",
+  "opts": {
+    "encoding": "utf8",
+    "destination": "./docs/gen",
+    "recurse": true,
+    "tutorials": "./docs/tutorials"
+  },
+  "templates": {
+    "theme": "cosmo"
+  }
+}

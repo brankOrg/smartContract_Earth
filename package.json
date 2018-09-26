@@ -1,0 +1,60 @@
+{
+  "name": "earth",
+  "version": "0.0.1",
+  "description": "Chaincode for token management",
+  "main": "index.js",
+  "scripts": {
+    "test": "EARTH_LOGGING_LEVEL=none nyc mocha test/**/*.test.js",
+    "doc": "jsdoc -c conf/jsdoc.json",
+    "start": "node index.js",
+    "lint": "eslint lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:XDMu/Earth.git"
+  },
+  "keywords": [
+    "chaincode"
+  ],
+  "author": "TBD",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "devDependencies": {
+    "chai": "4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^4.9.0",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jsdoc": "3.5.5",
+    "mocha": "5.2.0",
+    "nyc": "11.8.0",
+    "pouchdb": "^7.0.0",
+    "pouchdb-adapter-memory": "^7.0.0",
+    "pouchdb-find": "^7.0.0",
+    "rimraf": "2.6.2",
+    "sinon": "5.0.10",
+    "utf8": "3.0.0"
+  },
+  "dependencies": {
+    "fabric-shim": "1.1.2",
+    "jsrsasign": "8.0.12",
+    "mathjs": "4.4.1",
+    "winston": "2.4.2"
+  },
+  "nyc": {
+    "exclude": [
+      "test/**/*.js",
+      "lib/utils/Logger.js"
+    ],
+    "include": [
+      "lib/**/*.js"
+    ],
+    "lines": 70,
+    "statements": 70,
+    "functions": 70,
+    "branches": 60,
+    "reporter": [
+      "lcov",
+      "text-summary"
+    ]
+  }
+}

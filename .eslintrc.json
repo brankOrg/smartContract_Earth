@@ -1,0 +1,14 @@
+{
+    "extends": "airbnb-base",
+    "env": {
+        "mocha": true,
+        "node": true
+    },
+    "rules": {
+        "max-len": [
+            "error",
+            140
+        ],
+        "class-methods-use-this": "off"
+    }
+}
