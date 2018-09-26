@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:XDMu/Earth.git"
+    "url": "git@github.com:brankOrg/smartContract_Earth.git"
   },
   "keywords": [
     "chaincode"
